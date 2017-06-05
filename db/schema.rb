@@ -32,8 +32,8 @@ ActiveRecord::Schema.define(version: 20170605223444) do
     t.integer  "taxi_id"
   end
 
-  # add_index "rides", ["passenger_id"], name: "index_rides_on_passenger_id"
-  # add_index "rides", ["taxi_id"], name: "index_rides_on_taxi_id"
+  add_index "rides", ["passenger_id"], name: "index_rides_on_passenger_id"
+  add_index "rides", ["taxi_id"], name: "index_rides_on_taxi_id"
 
   create_table "taxis", force: :cascade do |t|
     t.datetime "created_at", null: false
