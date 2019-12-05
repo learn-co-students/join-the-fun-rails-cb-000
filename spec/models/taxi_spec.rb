@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Taxi do
+#describe Taxi do
   let(:taxi) { subject }
 
   it 'has many passengers through rides' do
